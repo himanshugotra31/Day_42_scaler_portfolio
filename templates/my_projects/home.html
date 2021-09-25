@@ -17,9 +17,12 @@
     {% for projects in my_projects %}
         <h2>
             <center>
-                {{ projects.name }}
+                <a href="/project/{{ projects.id }}">
+                    {{ projects.name }}
+                </a>
             </center>
         </h2>
+
     {% endfor %}
     
 </body>

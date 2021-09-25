@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project {{ projects_name }} </title>
+    <title>Project {{ project_name }}</title>
 </head>
 <body>
     <div class="project-title">
@@ -15,18 +15,19 @@
         </h1>
     </div>
     <h2>
-        Description
+        DESCRIPTION
     </h2>
     <p>
-        {{ project_details.description }}
+        {{project_details.Description}}
     </p>
     <h2>
-        Languages
+        LANGUAGES
     </h2>
-    {% for lang in project_details.languages %}
-    <p>
-        {{lang}}
-    </p>
-    {%endfor%}
+    {% for lang in project_details.Languages %}
+        <p>
+               {{ lang }}
+        </p>
+    {% endfor %}
+
 </body>
 </html>
